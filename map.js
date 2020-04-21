@@ -5,10 +5,11 @@ function initMap() {
 	// set options for map 
 	var mapOptions = {
 		center: {
-			lat: 52.2388, 
-			lng: 5.8323
+			lat: 52.141751, 
+			lng: 5.351102
 		},
 		zoom: 17,
+		mapTypeId: 'hybrid'
 	};
 
 	// create map and add to page
