@@ -4,10 +4,9 @@
 		<meta charset="utf-8">
 		<title>Landingsplek</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<script src="main.js" defer></script>
-		<script src="background.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCynRA89qEkFvBNqxT1T9E2zZIWK-7YL4w&callback=initMap"
-  type="text/javascript"></script>
+		<script defer src="weather.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCynRA89qEkFvBNqxT1T9E2zZIWK-7YL4w&callback=initMap"></script>
+		<script defer src="map.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -19,16 +18,27 @@
 				<!--MAP-->
 				<section class="dashboard-item-1">
 					<h1>LANDING SPOT</h1>
-					<article id="map"></article>
+					<div id="map"></div>
 				</section>
 
 				<!--WEATHER & RESTAURANTS-->
 				<section class="dashboard-item-2">
 					<h1>WEATHER</h1>
-					<br />
-					<h1>RESTAURANTS</h1>
-				</section>
+  					<p>View the weather at your landing spot!</p>
+				    <div class="input">
+				    	<input type="text" placeholder="Enter the city" class="input_text">
+				      	<input type="submit" value="Submit" class="submit">
+				    </div>
 
+				  	<div class="container">
+					    <div class="card">
+					      	<h1 class="name" id="city"></h1>
+					      	<p class="temp" id="temp"></p>
+					      	<p class="clouds" id="clouds"></p>
+					      	<p class="desc" id="desc"></p>
+					    </div>
+				  	</div>
+				</section>
 			</div>
 		</main>
 	</body>

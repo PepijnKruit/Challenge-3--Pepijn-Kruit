@@ -1,14 +1,14 @@
 var myMap;
 
 function initMap() {
+	
 	// set options for map 
 	var mapOptions = {
 		center: {
-			lat: 52.067514882683064, 
-			lng: 4.3238686164587
+			lat: 52.2388, 
+			lng: 5.8323
 		},
 		zoom: 17,
-		mapTypeId: 'hybrid'
 	};
 
 	// create map and add to page
