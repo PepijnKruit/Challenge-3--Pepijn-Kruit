@@ -1,3 +1,5 @@
+/*-----WEATHER-----*/
+
 var input = document.querySelector('.input_text');
 var main = document.querySelector('#city');
 var temp = document.querySelector('.temp');
@@ -25,3 +27,16 @@ button.addEventListener('click', function(name){
 	.catch(err => alert("This city doesn't exist in our database."));
 
 })
+
+
+
+
+/*-----MAP-----*/
+
+function getMap(){
+    var map = new Microsoft.Maps.Map('#myMap');
+}
+
+window.onload = function(){
+      getMap();
+}
