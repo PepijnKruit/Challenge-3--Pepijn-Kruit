@@ -1,4 +1,4 @@
-# Challenge 3 - Pepijn Kruit
+# Challenge 3
  Challenge 3 voor het vak XT2 met als opdrachtgever SpaceX.
 
 ## Achtergrondinformatie van deze challenge
