@@ -1,4 +1,4 @@
-/*-----Algemeen-----*/
+/*-----General-----*/
 
 body {
 	font-family: 'Brandon Grotesque', 'Helvetica', sans-serif;
@@ -15,6 +15,8 @@ h1 {
 }
 
 
+
+
 /*-----Header-----*/
 
 .logo {
@@ -25,6 +27,8 @@ h1 {
 	margin-right: auto;
 	width: 50%;
 }
+
+
 
 
 /*-----Main-----*/
@@ -39,55 +43,59 @@ h1 {
 	font-weight: bold;
 }
 
-#map {
-	width: 98%;
+#myMap {
+	width: 97%;
 	height: 450px;
 	margin-bottom: 15px;
-	border-radius: 5px;
+	border: 3px solid black;
+	border-radius: 3px;
 }
 
 input[type="submit"]{
-  padding: 15px 30px;
-  background: #e7e7e7;
-  border: none;
-  border-radius: 10px;
-  font-weight:bold;
-  font-size: 15px;
+  	padding: 15px 30px;
+  	background: #e7e7e7;
+  	border: none;
+  	border-radius: 10px;
+  	font-weight:bold;
+  	font-size: 15px;
 }
 
 .input input[type="text"]{
-  width: 300px;
-  height: 45px;
-  background: #e7e7e7;
-  padding-left: 15px;
-  margin-right: 20px;
-  border: none;
-  border-radius: 10px;
-  font-weight:bold;
-  font-size: 15px;
+  	width: 300px;
+ 	height: 45px;
+  	background: #e7e7e7;
+ 	padding-left: 15px;
+  	margin-right: 20px;
+  	border: none;
+  	border-radius: 10px;
+  	font-weight:bold;
+ 	font-size: 15px;
 }
 
 .card{
-  font-size: 25px;
-  padding: 0px;
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 #city {
-	margin-left: 15px;
+	margin-left: 5px;
+	font-size: 40px;
 }
 
 #temp {
-	margin-left: 15px;
+	margin-left: 5px;
+	font-size: 20px;
 }
 
 #clouds {
-	margin-left: 15px;
+	margin-left: 5px;
 }
 
 #desc {
-	margin-left: 15px;
+	margin-left: 5px;
+	font-size: 15px;
 }
+
+
 
 
 /*-----Mobiele versie-----*/
@@ -104,9 +112,10 @@ input[type="submit"]{
 @media (min-width: 400px) {
 	input[type="submit"]{
 		margin-top: 20px;	
-
 	}
 }
+
+
 
 
 /*-----Laptop versie-----*/
@@ -124,6 +133,8 @@ input[type="submit"]{
 		grid-column: 8/13;
 	}
 }
+
+
 
 
 /*-----Maximale breedte-----*/

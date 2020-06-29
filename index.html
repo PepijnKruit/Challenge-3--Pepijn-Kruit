@@ -3,26 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Landingsplek</title>
-		<link rel="stylesheet" type="text/css" href="index.css">
-		<script defer src="weather.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfdVwYfyptKh2hYnJwxfIOKQsqj7uVD0s&callback=initMap"
-		async defer></script>
-		<script defer src="map.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script defer src="js/weather.js" defer></script>
+		<script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AmvXs1vGFkW9d_imsgB8zKuUx6pu4-i228wG_SD2_aZmyrnJ8IvLmsMzp0l4NkCP" async></script>
+		<script defer src="js/map.js" defer></script>
 	</head>
 	<body>
 		<header>
-			<img src="logo.png" alt="SpaceX logo" class ="logo">
+			<img src="img/logo.png" alt="SpaceX logo" class ="logo">
 		</header>
 		<main>
 			<div class="dashboard">
-
-				<!--MAP-->
 				<section class="dashboard-item-1">
 					<h1>LANDING SPOT</h1>
-					<div id="map"></div>
+					<div id="myMap"></div>
 				</section>
-
-				<!--WEATHER & RESTAURANTS-->
 				<section class="dashboard-item-2">
 					<h1>WEATHER</h1>
   					<p>View the weather at your landing spot!</p>
@@ -30,18 +25,13 @@
 				    	<input type="text" placeholder="Enter the city" class="input_text">
 				      	<input type="submit" value="Submit" class="submit">
 				    </div>
-				  	<div class="container">
-					    <div class="card">
-					      	<h1 class="name" id="city"></h1>
-					      	<p class="temp" id="temp"></p>
-					      	<p class="clouds" id="clouds"></p>
-					      	<p class="desc" id="desc"></p>
-					    </div>
+				    <div class="card">
+					   	<h1 class="name" id="city"></h1>
+					   	<p class="temp" id="temp"></p>
+					    <p class="desc" id="desc"></p>
 				  	</div>
-				  	
 				</section>
 			</div>
 		</main>
-
 	</body>
 </html>
